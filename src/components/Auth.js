@@ -16,7 +16,7 @@ export default function Auth() {
   ///////////////////////////////
   useEffect(() => {
     if (authS.pending) {
-      toast.info("Wait, logging you in...", {
+      toast.info(`Wait, ${isSignIn ? 'Logging' : 'Registering'} you in...`, {
         position: toast.POSITION.BOTTOM_CENTER
       });
     }
