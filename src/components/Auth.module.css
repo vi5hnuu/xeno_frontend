@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #023e8a;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 2.5rem;
+  padding-bottom: 1.75rem;
+  min-width: 35%;
+  max-width: 95%;
+  gap: 0.75rem;
+}
+
+.control {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.control > input:focus {
+  background-color: #caf0f8;
+  outline: none;
+}
+.control > label {
+  flex: 1;
+}
+.control > input {
+  flex: 2;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}

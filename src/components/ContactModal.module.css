@@ -1,0 +1,39 @@
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #ade8f4;
+  z-index: 1000;
+  padding: 1.75rem;
+  min-width: 35%;
+  max-width: 95%;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+.control input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: none;
+}
+.control input:focus {
+  outline: 2px solid #023e8a;
+}
+.control * {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-end;
+}
